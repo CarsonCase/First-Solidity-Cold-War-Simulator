@@ -1,0 +1,15 @@
+#redTeam{
+    color:red;
+    margin-left:50px;
+    float:left;
+
+}
+#blueTeam{
+    color: blue;
+    float: right;
+    margin-right:50px;
+}
+
+#forms{
+    text-align: center;
+}

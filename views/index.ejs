@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>Cold War Simulator</h1>
+    <div id = "redTeam">
+        <h1>Red Team</h1>
+        <h2>HP: <%= redHP %></h2>
+        <h2>SOLDIERS: <%= redArmy %></h2>
+    </div>
+
+    <div id="blueTeam">
+        <h2>Blue Team</h2>
+        <h2>HP: <%= blueHP %></h2>
+        <h2>SOLDIERS: <%= blueArmy %></h2>
+    </div>
+
+    <div id="forms">
+        <form method="POST">
+            address:<br><input type="text" name="address">
+            <br>
+            ammount:<br><input type="text" name="value">
+            <br>
+            <input id="red_radio" type="radio" name = "team_select" value="red">
+            <label for="red_radio">Red</label><br>
+            <input id="blue_radio" type="radio" name = "team_select" value="blue">
+            <label for="blue_radio">Blue</label><br>
+            <br>
+            <button type = "submit" formaction="/hire">Hire Troops!</button>
+            <button type="submit" formaction="/tick">Attack!</button>
+        </form> 
+    </div>
+
+
+</body>
+</html>
